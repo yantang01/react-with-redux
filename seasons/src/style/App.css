@@ -1,0 +1,96 @@
+iframe {
+  display: none;
+}
+
+@font-face {
+  font-family: "sensei";
+  src: local("sensei"), url(./sensei.ttf) format("truetype");
+}
+
+.summer {
+  background: linear-gradient(
+    90deg,
+    rgba(247, 196, 89, 1) 0%,
+    rgba(254, 73, 73, 1) 42%,
+    rgba(252, 123, 187, 1) 100%
+  ) !important;
+}
+
+.winter {
+  background: linear-gradient(
+    90deg,
+    rgba(145, 188, 225, 1) 0%,
+    rgba(202, 155, 205, 1) 42%,
+    rgba(252, 123, 187, 1) 100%
+  ) !important;
+}
+
+.winter .icon-left:before,
+.winter .icon-right:before {
+  content: "" !important;
+}
+
+.winter .icon-left,
+.winter .icon-right {
+  background: url("./sparkles.png");
+  background-size: cover;
+  width: 400px !important;
+  height: 400px !important;
+}
+
+.winter .icon-left:after {
+  content: "";
+  display: block;
+  left: 0px;
+  top: 180px;
+  height: 200px;
+  width: 200px;
+  background: url("./sparkles2.png") no-repeat;
+  background-size: contain;
+  position: absolute;
+  background-position: 0 0px;
+}
+
+.winter .icon-right:after {
+  content: "";
+  display: block;
+  left: 220px;
+  top: 180px;
+  height: 200px;
+  width: 200px;
+  background: url("./sparkles3.png") no-repeat;
+  background-size: contain;
+  position: absolute;
+  background-position: 0 0px;
+}
+
+.winter .icon-right {
+  top: 10px !important;
+}
+
+.summer .icon-left,
+.summer .icon-right {
+  z-index: 5;
+}
+
+.summer:after,
+.winter:after {
+  content: "";
+  display: block;
+  background: url("./clouds.png");
+  position: absolute;
+  background-size: cover;
+  bottom: 0px;
+  width: 100vw;
+  height: 30%;
+}
+
+h1 {
+  font-family: sensei;
+  font-weight: 300;
+  z-index: 20;
+  color: white;
+  text-shadow: 2px 2px 4px rgb(102, 102, 102);
+  font-size: 54px;
+  margin-bottom: 15%;
+}
