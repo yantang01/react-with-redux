@@ -1,5 +1,5 @@
 # react-with-redux
-7 small React apps built in the process of learning React.
+7 small React apps built in the process of learning React ([course link for reference](https://www.udemy.com/course/react-redux/)).
 
 ## Steps to run in dev environment:
 - clone repo
